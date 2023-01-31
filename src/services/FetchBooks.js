@@ -5,11 +5,11 @@ export const fetchBooks = async (searchValue) => {
   const data = await response.json();
   const books = data.items.map((item) => {
     return {
-      Title: item.volumeInfo.title,
-      Author: item.volumeInfo.authors,
+      Title: item.volumeInfo?.title,
+      Author: item.volumeInfo?.authors,
       Description: item.volumeInfo?.description.slice(0, 300) + "...",
-      ImageLink: item.volumeInfo.imageLinks.thumbnail,
-      Link: item.volumeInfo.previewLink,
+      ImageLink: item.volumeInfo.imageLinks?.thumbnail,
+      Link: item.volumeInfo?.previewLink,
     };
   });
 

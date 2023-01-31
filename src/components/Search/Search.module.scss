@@ -1,31 +1,5 @@
 @import "../../Palette/palette.scss";
 
-.Books {
-  width: 100vw;
-  height: max-content;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  &__Card {
-    width: 500px;
-    color: white;
-    text-align: center;
-    margin: 10px;
-    text-decoration: none;
-    &:hover {
-      background-color: $background-color-hover;
-      border-radius: 30px;
-      color: white;
-    }
-    &__Title {
-      font-size: 30px;
-    }
-    &__Img {
-      border: $image-border;
-    }
-  }
-}
-
 .Search {
   color: white;
   display: flex;
